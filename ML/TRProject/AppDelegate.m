@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [_window makeKeyAndVisible];
+    
+    ViewController *vc = [ViewController new];
+    
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    _window.rootViewController = navi;
     
     return YES;
 }
