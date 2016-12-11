@@ -13,6 +13,19 @@
 		8522AC871DD4509A00222178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8522AC831DD4509A00222178 /* LaunchScreen.storyboard */; };
 		8522AC881DD4509A00222178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8522AC851DD4509A00222178 /* Main.storyboard */; };
 		8522AC8A1DD4510200222178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8522AC891DD4510200222178 /* Assets.xcassets */; };
+		86050DC31DFE157000FB05A3 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DC21DFE157000FB05A3 /* NetManager.m */; };
+		86050DC61DFE158200FB05A3 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DC51DFE158200FB05A3 /* BaseNetManager.m */; };
+		86050DC91DFE159400FB05A3 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DC81DFE159400FB05A3 /* Test.m */; };
+		86050DCD1DFE17FF00FB05A3 /* NSString+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DCC1DFE17FF00FB05A3 /* NSString+YX.m */; };
+		86050DD01DFE184D00FB05A3 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DCF1DFE184D00FB05A3 /* NSObject+Parse.m */; };
+		86050DD31DFE186A00FB05A3 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DD21DFE186A00FB05A3 /* UIView+HUD.m */; };
+		86050DD61DFE18DB00FB05A3 /* MeiLaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DD51DFE18DB00FB05A3 /* MeiLaCell.m */; };
+		86050DDE1DFE1A4900FB05A3 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DDC1DFE1A4900FB05A3 /* MeViewController.m */; };
+		86050DDF1DFE1A4900FB05A3 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86050DDD1DFE1A4900FB05A3 /* MeViewController.xib */; };
+		86050DE21DFE1A6F00FB05A3 /* GlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DE11DFE1A6F00FB05A3 /* GlobalViewController.m */; };
+		86050DE51DFE1A8500FB05A3 /* RankingListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DE41DFE1A8500FB05A3 /* RankingListVC.m */; };
+		86050DE81DFE1AF700FB05A3 /* BeautifulModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DE71DFE1AF700FB05A3 /* BeautifulModel.m */; };
+		86050DEB1DFE1B2700FB05A3 /* MainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DEA1DFE1B2700FB05A3 /* MainTest.m */; };
 		E2E761FC597D9BCD5FACF502 /* libPods-TRProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DBBB46E6BF364BA46F8C9B /* libPods-TRProject.a */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +37,37 @@
 		0CF7A4991D329815008FBC98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0CF7A4A61D329815008FBC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		851AA0B11D37436F003CD2EC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		8522AC801DD4509200222178 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8522AC811DD4509200222178 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8522AC801DD4509200222178 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = TRProject/ViewController.h; sourceTree = SOURCE_ROOT; };
+		8522AC811DD4509200222178 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = TRProject/ViewController.m; sourceTree = SOURCE_ROOT; };
 		8522AC841DD4509A00222178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8522AC861DD4509A00222178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8522AC891DD4510200222178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8522AC891DD4510200222178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		86050DC11DFE157000FB05A3 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		86050DC21DFE157000FB05A3 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		86050DC41DFE158200FB05A3 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		86050DC51DFE158200FB05A3 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		86050DC71DFE159400FB05A3 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		86050DC81DFE159400FB05A3 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		86050DCA1DFE15B000FB05A3 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		86050DCB1DFE17FF00FB05A3 /* NSString+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YX.h"; sourceTree = "<group>"; };
+		86050DCC1DFE17FF00FB05A3 /* NSString+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YX.m"; sourceTree = "<group>"; };
+		86050DCE1DFE184D00FB05A3 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		86050DCF1DFE184D00FB05A3 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		86050DD11DFE186A00FB05A3 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		86050DD21DFE186A00FB05A3 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		86050DD41DFE18DB00FB05A3 /* MeiLaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeiLaCell.h; sourceTree = "<group>"; };
+		86050DD51DFE18DB00FB05A3 /* MeiLaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeiLaCell.m; sourceTree = "<group>"; };
+		86050DDB1DFE1A4900FB05A3 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		86050DDC1DFE1A4900FB05A3 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		86050DDD1DFE1A4900FB05A3 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		86050DE01DFE1A6F00FB05A3 /* GlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalViewController.h; sourceTree = "<group>"; };
+		86050DE11DFE1A6F00FB05A3 /* GlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalViewController.m; sourceTree = "<group>"; };
+		86050DE31DFE1A8500FB05A3 /* RankingListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListVC.h; sourceTree = "<group>"; };
+		86050DE41DFE1A8500FB05A3 /* RankingListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListVC.m; sourceTree = "<group>"; };
+		86050DE61DFE1AF700FB05A3 /* BeautifulModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifulModel.h; sourceTree = "<group>"; };
+		86050DE71DFE1AF700FB05A3 /* BeautifulModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifulModel.m; sourceTree = "<group>"; };
+		86050DE91DFE1B2700FB05A3 /* MainTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTest.h; sourceTree = "<group>"; };
+		86050DEA1DFE1B2700FB05A3 /* MainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTest.m; sourceTree = "<group>"; };
 		A1DD1694CEFD692E69C0B93E /* Pods-TRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRProject/Pods-TRProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F1FECE22787A15FBD4C7252B /* Pods-TRProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRProject/Pods-TRProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,12 +107,14 @@
 			children = (
 				0CF7A4981D329815008FBC98 /* AppDelegate.h */,
 				0CF7A4991D329815008FBC98 /* AppDelegate.m */,
-				8522AC801DD4509200222178 /* ViewController.h */,
-				8522AC811DD4509200222178 /* ViewController.m */,
-				8522AC831DD4509A00222178 /* LaunchScreen.storyboard */,
-				8522AC851DD4509A00222178 /* Main.storyboard */,
-				0CF7A4A61D329815008FBC98 /* Info.plist */,
-				8522AC891DD4510200222178 /* Assets.xcassets */,
+				86050DC01DFE14A900FB05A3 /* Resource */,
+				86050DBF1DFE13E300FB05A3 /* NetManager */,
+				86050DBE1DFE13C500FB05A3 /* Vendor */,
+				86050DBD1DFE13AB00FB05A3 /* Define */,
+				86050DBC1DFE139A00FB05A3 /* Category */,
+				86050DBB1DFE138500FB05A3 /* View */,
+				86050DBA1DFE137400FB05A3 /* ViewController */,
+				86050DB91DFE135700FB05A3 /* Model */,
 				0CF7A4951D329815008FBC98 /* Supporting Files */,
 			);
 			path = TRProject;
@@ -82,10 +123,130 @@
 		0CF7A4951D329815008FBC98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CF7A4A61D329815008FBC98 /* Info.plist */,
 				851AA0B11D37436F003CD2EC /* PrefixHeader.pch */,
 				0CF7A4961D329815008FBC98 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86050DB91DFE135700FB05A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86050DE61DFE1AF700FB05A3 /* BeautifulModel.h */,
+				86050DE71DFE1AF700FB05A3 /* BeautifulModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86050DBA1DFE137400FB05A3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86050DDA1DFE1A2700FB05A3 /* Me */,
+				86050DD91DFE19EE00FB05A3 /* Global */,
+				86050DD81DFE19CE00FB05A3 /* RankingList */,
+				86050DD71DFE19A700FB05A3 /* Beautify */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		86050DBB1DFE138500FB05A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86050DD41DFE18DB00FB05A3 /* MeiLaCell.h */,
+				86050DD51DFE18DB00FB05A3 /* MeiLaCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86050DBC1DFE139A00FB05A3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				86050DCB1DFE17FF00FB05A3 /* NSString+YX.h */,
+				86050DCC1DFE17FF00FB05A3 /* NSString+YX.m */,
+				86050DCE1DFE184D00FB05A3 /* NSObject+Parse.h */,
+				86050DCF1DFE184D00FB05A3 /* NSObject+Parse.m */,
+				86050DD11DFE186A00FB05A3 /* UIView+HUD.h */,
+				86050DD21DFE186A00FB05A3 /* UIView+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		86050DBD1DFE13AB00FB05A3 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				86050DCA1DFE15B000FB05A3 /* Constant.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		86050DBE1DFE13C500FB05A3 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				86050DC71DFE159400FB05A3 /* Test.h */,
+				86050DC81DFE159400FB05A3 /* Test.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		86050DBF1DFE13E300FB05A3 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				86050DC11DFE157000FB05A3 /* NetManager.h */,
+				86050DC21DFE157000FB05A3 /* NetManager.m */,
+				86050DC41DFE158200FB05A3 /* BaseNetManager.h */,
+				86050DC51DFE158200FB05A3 /* BaseNetManager.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		86050DC01DFE14A900FB05A3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8522AC831DD4509A00222178 /* LaunchScreen.storyboard */,
+				8522AC851DD4509A00222178 /* Main.storyboard */,
+				8522AC891DD4510200222178 /* Assets.xcassets */,
+				86050DE91DFE1B2700FB05A3 /* MainTest.h */,
+				86050DEA1DFE1B2700FB05A3 /* MainTest.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		86050DD71DFE19A700FB05A3 /* Beautify */ = {
+			isa = PBXGroup;
+			children = (
+				8522AC801DD4509200222178 /* ViewController.h */,
+				8522AC811DD4509200222178 /* ViewController.m */,
+			);
+			path = Beautify;
+			sourceTree = "<group>";
+		};
+		86050DD81DFE19CE00FB05A3 /* RankingList */ = {
+			isa = PBXGroup;
+			children = (
+				86050DE31DFE1A8500FB05A3 /* RankingListVC.h */,
+				86050DE41DFE1A8500FB05A3 /* RankingListVC.m */,
+			);
+			path = RankingList;
+			sourceTree = "<group>";
+		};
+		86050DD91DFE19EE00FB05A3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				86050DE01DFE1A6F00FB05A3 /* GlobalViewController.h */,
+				86050DE11DFE1A6F00FB05A3 /* GlobalViewController.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		86050DDA1DFE1A2700FB05A3 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				86050DDB1DFE1A4900FB05A3 /* MeViewController.h */,
+				86050DDC1DFE1A4900FB05A3 /* MeViewController.m */,
+				86050DDD1DFE1A4900FB05A3 /* MeViewController.xib */,
+			);
+			path = Me;
 			sourceTree = "<group>";
 		};
 		C3F8E49F7DD32CA61E390F59 /* Pods */ = {
@@ -168,6 +329,7 @@
 			files = (
 				8522AC871DD4509A00222178 /* LaunchScreen.storyboard in Resources */,
 				8522AC8A1DD4510200222178 /* Assets.xcassets in Resources */,
+				86050DDF1DFE1A4900FB05A3 /* MeViewController.xib in Resources */,
 				8522AC881DD4509A00222178 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +389,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86050DEB1DFE1B2700FB05A3 /* MainTest.m in Sources */,
+				86050DD31DFE186A00FB05A3 /* UIView+HUD.m in Sources */,
+				86050DE21DFE1A6F00FB05A3 /* GlobalViewController.m in Sources */,
+				86050DE51DFE1A8500FB05A3 /* RankingListVC.m in Sources */,
 				8522AC821DD4509200222178 /* ViewController.m in Sources */,
+				86050DD01DFE184D00FB05A3 /* NSObject+Parse.m in Sources */,
+				86050DE81DFE1AF700FB05A3 /* BeautifulModel.m in Sources */,
+				86050DC61DFE158200FB05A3 /* BaseNetManager.m in Sources */,
+				86050DC31DFE157000FB05A3 /* NetManager.m in Sources */,
+				86050DC91DFE159400FB05A3 /* Test.m in Sources */,
+				86050DD61DFE18DB00FB05A3 /* MeiLaCell.m in Sources */,
 				0CF7A49A1D329815008FBC98 /* AppDelegate.m in Sources */,
+				86050DCD1DFE17FF00FB05A3 /* NSString+YX.m in Sources */,
+				86050DDE1DFE1A4900FB05A3 /* MeViewController.m in Sources */,
 				0CF7A4971D329815008FBC98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +416,7 @@
 				8522AC841DD4509A00222178 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		8522AC851DD4509A00222178 /* Main.storyboard */ = {
@@ -250,6 +425,7 @@
 				8522AC861DD4509A00222178 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
