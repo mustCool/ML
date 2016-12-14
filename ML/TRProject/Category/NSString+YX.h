@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (YX)
-
+-(NSURL *)yx_URL;
 @end

@@ -26,6 +26,10 @@
     
     _window.rootViewController = navi;
     
+    [NetManager getRankingListCompletionHandel:^(RankingListMainModel *model, NSError *error) {
+        NSLog(@"");
+    }];
+    
     return YES;
 }
 

@@ -9,5 +9,8 @@
 #import "NSString+YX.h"
 
 @implementation NSString (YX)
-
+-(NSURL *)yx_URL
+{
+    return [NSURL  URLWithString:self];
+}
 @end

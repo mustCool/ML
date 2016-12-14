@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Parse)
-
+@interface NSObject (Parse)<YYModel>
++(id)parse:(id)JSON;
 @end

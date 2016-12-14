@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface BaseNetManager : NSObject
-
++(id)getWithPath:(NSString *)path pragrameters:(NSDictionary *)pragrameters completionHandler:(void(^)(id responseObj, NSError *error))completionHandler;
 @end

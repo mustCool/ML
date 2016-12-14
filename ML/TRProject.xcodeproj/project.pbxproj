@@ -26,6 +26,7 @@
 		86050DE51DFE1A8500FB05A3 /* RankingListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DE41DFE1A8500FB05A3 /* RankingListVC.m */; };
 		86050DE81DFE1AF700FB05A3 /* BeautifulModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DE71DFE1AF700FB05A3 /* BeautifulModel.m */; };
 		86050DEB1DFE1B2700FB05A3 /* MainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DEA1DFE1B2700FB05A3 /* MainTest.m */; };
+		939E72C61E0167540078E827 /* RankingListMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E72C51E0167540078E827 /* RankingListMainModel.m */; };
 		E2E761FC597D9BCD5FACF502 /* libPods-TRProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DBBB46E6BF364BA46F8C9B /* libPods-TRProject.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		86050DE71DFE1AF700FB05A3 /* BeautifulModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifulModel.m; sourceTree = "<group>"; };
 		86050DE91DFE1B2700FB05A3 /* MainTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTest.h; sourceTree = "<group>"; };
 		86050DEA1DFE1B2700FB05A3 /* MainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTest.m; sourceTree = "<group>"; };
+		939E72C41E0167540078E827 /* RankingListMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListMainModel.h; sourceTree = "<group>"; };
+		939E72C51E0167540078E827 /* RankingListMainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListMainModel.m; sourceTree = "<group>"; };
 		A1DD1694CEFD692E69C0B93E /* Pods-TRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRProject/Pods-TRProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F1FECE22787A15FBD4C7252B /* Pods-TRProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRProject/Pods-TRProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +108,7 @@
 		0CF7A4941D329815008FBC98 /* TRProject */ = {
 			isa = PBXGroup;
 			children = (
+				939E72C71E01883E0078E827 /* ViewModel */,
 				0CF7A4981D329815008FBC98 /* AppDelegate.h */,
 				0CF7A4991D329815008FBC98 /* AppDelegate.m */,
 				86050DC01DFE14A900FB05A3 /* Resource */,
@@ -133,6 +137,7 @@
 		86050DB91DFE135700FB05A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				939E72C21E0167180078E827 /* RankingListModel */,
 				86050DE61DFE1AF700FB05A3 /* BeautifulModel.h */,
 				86050DE71DFE1AF700FB05A3 /* BeautifulModel.m */,
 			);
@@ -247,6 +252,30 @@
 				86050DDD1DFE1A4900FB05A3 /* MeViewController.xib */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		939E72C21E0167180078E827 /* RankingListModel */ = {
+			isa = PBXGroup;
+			children = (
+				939E72C31E0167390078E827 /* RankingListMainModel */,
+			);
+			path = RankingListModel;
+			sourceTree = "<group>";
+		};
+		939E72C31E0167390078E827 /* RankingListMainModel */ = {
+			isa = PBXGroup;
+			children = (
+				939E72C41E0167540078E827 /* RankingListMainModel.h */,
+				939E72C51E0167540078E827 /* RankingListMainModel.m */,
+			);
+			path = RankingListMainModel;
+			sourceTree = "<group>";
+		};
+		939E72C71E01883E0078E827 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C3F8E49F7DD32CA61E390F59 /* Pods */ = {
@@ -402,6 +431,7 @@
 				86050DD61DFE18DB00FB05A3 /* MeiLaCell.m in Sources */,
 				0CF7A49A1D329815008FBC98 /* AppDelegate.m in Sources */,
 				86050DCD1DFE17FF00FB05A3 /* NSString+YX.m in Sources */,
+				939E72C61E0167540078E827 /* RankingListMainModel.m in Sources */,
 				86050DDE1DFE1A4900FB05A3 /* MeViewController.m in Sources */,
 				0CF7A4971D329815008FBC98 /* main.m in Sources */,
 			);

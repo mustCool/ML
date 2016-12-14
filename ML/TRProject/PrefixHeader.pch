@@ -20,6 +20,21 @@
 #import <YYKit.h>
 #import <MJRefresh.h>
 #import <MBProgressHUD.h>
+#import "Constant.h"
+#import "NSString+YX.h"
+
+#pragma mark  -m Parse
+#import "NSObject+Parse.h"
+
+#pragma mark  -m  RankingListModel
+#import "RankingListMainModel.h"
+
+#pragma mark  -m  NetWork
+#import "BaseNetManager.h"
+#import "NetManager.h"
+
+#pragma mark  -m  RankingListModel
+#import "RankingListMainModel.h"
 
 
 #endif /* PrefixHeader_pch */
