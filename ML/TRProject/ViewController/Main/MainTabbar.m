@@ -89,36 +89,19 @@
     return [UIColor colorWithRed:246.f / 255.f green:76.f / 255.f blue:116.f / 255.f alpha:1.f];
 }
 
+#pragma mark -m  MainInterface
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //修改所有item的选中状态时的默认文字颜色
     
-    
-    // Do any additional setup after loading the view.
+    // 把所有的主功能 VC 添加到 tabbar 中
     UINavigationController *beautifyNavi = [[UINavigationController alloc] initWithRootViewController:self.beautifyVC];
     UINavigationController *rankingListNavi = [[UINavigationController alloc] initWithRootViewController:self.rankingListVC];
     UINavigationController *gloablNavi = [[UINavigationController alloc] initWithRootViewController:self.globalVC];
     UINavigationController *meNavi = [[UINavigationController alloc] initWithRootViewController:self.meVC];
     self.viewControllers = @[beautifyNavi, rankingListNavi, gloablNavi, meNavi];
-      //设置了全局的所有tabbarItem的文字样式. 选中时的
-        [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: self.fontColor, NSFontAttributeName:[UIFont systemFontOfSize:35]} forState:UIControlStateSelected];
     
-    //[self.tabBar setBarTintColor: [UIColor clearColor]];
-    //[self.tabBar setTintColor:[UIColor whiteColor]];
-    //[self.tabBar setBackgroundColor:[UIColor whiteColor]];
-    //self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
-    //self.tabBarItem.image = [UIImage imageNamed:@""];
-    
-    
-    // 遵守 tabbar 的代理协议
-    //self.delegate = self;
-    
-    // 添加选中的背景
-    //self.itemSelectedBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TabBar_Background_Highlight_150x100_"]];
-    
-    //self.itemSelectedBackground.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width / 5, 48);
-    //[self.tabBar insertSubview:self.itemSelectedBackground atIndex:0];
-    //self.tabBar.opaque = YES;
+    //设置了全局的所有tabbarItem的文字样式. 选中时的
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: self.fontColor, NSFontAttributeName:[UIFont systemFontOfSize:35]} forState:UIControlStateSelected];
     
 }
 
