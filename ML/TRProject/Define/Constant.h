@@ -13,5 +13,8 @@
 
 #define kRanKingListPath @"http://meilapp.qiniucdn.com/"
 
+#define kWidth (long)([UIScreen mainScreen].bounds.size.width)
+#define kHight  (long)([UIScreen mainScreen].bounds.size.height)
+
 
 #endif /* Constant_h */

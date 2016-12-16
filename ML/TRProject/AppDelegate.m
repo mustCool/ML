@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MainTabbar.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +20,9 @@
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [_window makeKeyAndVisible];
     
-    ViewController *vc = [ViewController new];
+    UITabBarController *mt = [MainTabbar new];
     
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:mt];
     
     _window.rootViewController = navi;
     

@@ -1,22 +1,23 @@
 //
-//  GlobalViewController.m
+//  BeautifyViewController.m
 //  TRProject
 //
-//  Created by Yang Xiong on 12/12/2016.
+//  Created by Yang Xiong on 15/12/2016.
 //  Copyright © 2016 Tedu. All rights reserved.
 //
 
-#import "GlobalViewController.h"
+#import "BeautifyViewController.h"
 
-@interface GlobalViewController ()
+@interface BeautifyViewController ()
 
 @end
 
-@implementation GlobalViewController
+@implementation BeautifyViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    self.navigationItem.title  =  @"全球购";
+    self.navigationItem.title  =  @"晒好货";
 }
 
 - (void)didReceiveMemoryWarning {
