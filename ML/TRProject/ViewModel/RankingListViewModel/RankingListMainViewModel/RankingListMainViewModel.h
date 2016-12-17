@@ -16,7 +16,7 @@ typedef   NS_ENUM(NSUInteger,  RequestMode)
 @interface RankingListMainViewModel : NSObject
 -(NSArray *)topButton;
 
-@property (nonatomic) NSMutableArray<RankingListMainModel *>   *dataList;
+@property (nonatomic) RankingListMainModel* dataList;
 @property (nonatomic) NSInteger pages;
 
 -(void)getDataWithRequestMode:(RequestMode)requestMode  completionHandler:(void(^)(NSError  *error))completionHandler;

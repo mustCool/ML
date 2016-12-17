@@ -35,12 +35,16 @@
 
 #pragma mark  -m  RankingListModel
 #import "RankingListMainModel.h"
+#import "RankingListMainViewModel.h"
 
 #pragma mark -m  ViewController
 #import "BeautifyViewController.h"
 #import "RankingListVC.h"
 #import "GlobalViewController.h"
 #import "MeViewController.h"
+
+#pragma mark -m  View
+#import "RankingListMainCell.h"
 
 
 #endif /* PrefixHeader_pch */

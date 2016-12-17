@@ -9,11 +9,11 @@
 #import "RankingListMainViewModel.h"
 
 @implementation RankingListMainViewModel
--(NSMutableArray<RankingListMainModel *> *)dataList
+-(RankingListMainModel *)dataList
 {
     if (!_dataList)
     {
-        _dataList   =  [NSMutableArray  new];
+        _dataList   =  [RankingListMainModel  new];
     }
     return _dataList;
 }
@@ -26,17 +26,19 @@
         tmpPages  =  _pages  +  1;
     }
     [NetManager  getRankingListCompletionHandel:^(RankingListMainModel *model, NSError *error) {
-        if (requestMode  ==  RequestModeRefresh)
-        {
-            [self.dataList removeAllObjects];
-        }
-        [self.dataList   addObjectsFromArray:model];
-    
+        self.dataList  =  model;
     }];
 }
 
-//-(NSArray *)topButton
-//{
-//    
-//}
+-(NSArray *)topButton
+{
+    NSMutableArray  *tmpArr  =  [NSMutableArray  new];
+    for (NSInteger  i  =  0; i  <  2; i  ++)
+    {
+        NSURL  *url  =  [NSString stringWithFormat: kRanKingListPath,  self.dataList.data.top.custom[i].img.img].yx_URL;
+        [tmpArr  addObject:url];
+    }
+    
+    return tmpArr.copy;
+}
 @end
