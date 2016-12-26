@@ -9,7 +9,9 @@
 #ifndef Constant_h
 #define Constant_h
 
-#define kRankingListModelPath @"http://api.meilapp.com/product/top_entry?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&p=1&sig=b995d0c5f3dd6944494135dd54fb933640250327"
+#define kRankingListModelPath @"http://api.meilapp.com/product/top_entry?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&p=1&sig=d6d461749b70a99c6c7d2044ebbd9ef7c7fb5bcd"
+
+#define kRanking_listhmapath01 Q"http://api.meilapp.com/product/top_entry?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&p=1&sig=be57b59fcd6c7b66673275d92c34c3d322eaddfc"
 
 #define kRankingListSencondPath @"http://api.meilapp.com/product/custom_top?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&sig=fb59211b7f1048c7f93cbb0820c2f8a68da691cb&slug=73"
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class RankingListDataModel,RankingListAdvisersModel,RankingListCategoryModel,RankingListFeatureMoreModel,RankingListFeatureShowModel,RankingListNationsModel,RankingListTopModel,RankingListAdvisersListModel,RankingListFSProductsModel,RankingListTopCustomModel,RankingListFeatureShowImgModel,RankingListFeatureShowImgLogoModel,RankingListNationsProductsModel,RankingListNationsImgModel,RankingListNationsImgLogoModel,RankingListTopImgLogoModel,RankingListTopImgModel;
+@class RankingListDataModel,  RankingListAdvisersModel,   RankingListCategoryModel,  RankingListFeatureMoreModel,  RankingListFeatureShowModel,  RankingListNationsModel,  RankingListTopModel,  RankingListAdvisersListModel,  RankingListFSProductsModel,  RankingListTopCustomModel,  RankingListFeatureShowImgModel,  RankingListFeatureShowImgLogoModel,  RankingListNationsProductsModel,  RankingListNationsImgModel,  RankingListNationsImgLogoModel,  RankingListTopImgLogoModel,  RankingListTopImgModel;
 
 @interface RankingListMainModel : NSObject
 @property (nonatomic) RankingListDataModel *data;
@@ -20,6 +20,7 @@
 @property (nonatomic) NSArray<RankingListFeatureShowModel *>  *feature_show;
 @property (nonatomic) NSArray<RankingListNationsModel *>  *nations;
 @property (nonatomic) RankingListTopModel *top;
+@property (nonatomic) NSString  *total_des;
 @end
 
 @interface RankingListAdvisersModel : NSObject

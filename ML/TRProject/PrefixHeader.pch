@@ -45,6 +45,10 @@
 
 #pragma mark -m  View
 #import "RankingListMainCell.h"
+#import "RankingListNationsViewCell.h"
+#import "RankingListFeatureCell.h"
+#import "RankingListTopCell.h"
+#import "RankingListTopUVCell.h"
 
 
 #endif /* PrefixHeader_pch */
