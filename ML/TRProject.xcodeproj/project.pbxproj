@@ -13,6 +13,14 @@
 		8522AC881DD4509A00222178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8522AC851DD4509A00222178 /* Main.storyboard */; };
 		86050DC91DFE159400FB05A3 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DC81DFE159400FB05A3 /* Test.m */; };
 		86050DEB1DFE1B2700FB05A3 /* MainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86050DEA1DFE1B2700FB05A3 /* MainTest.m */; };
+		862B08A31E11017A00890BCD /* RankingListAdvisersViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 862B08A21E11017A00890BCD /* RankingListAdvisersViewCell.m */; };
+		862B08A91E1119C000890BCD /* RankingListAdvisersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 862B08A81E1119C000890BCD /* RankingListAdvisersCell.m */; };
+		862BD3591E1AE8AE0007E87E /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 862BD3581E1AE8AE0007E87E /* MeViewController.xib */; };
+		862CCDCE1E126DA3001C972E /* RankingListSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CCDCD1E126DA3001C972E /* RankingListSearch.m */; };
+		862CCDD61E12A350001C972E /* RankingListHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CCDD51E12A350001C972E /* RankingListHeaderModel.m */; };
+		8635A5CC1E13D8EE0016EEFA /* RankingListHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8635A5CB1E13D8EE0016EEFA /* RankingListHeaderViewController.m */; };
+		8639ABF11E152EC400F7EDC8 /* RankingListHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639ABF01E152EC400F7EDC8 /* RankingListHeaderViewCell.m */; };
+		8639ABF41E1534CE00F7EDC8 /* RankingListHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8639ABF31E1534CE00F7EDC8 /* RankingListHeaderViewModel.m */; };
 		86BFCB011E0CD89D004F4C69 /* RankingListMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB001E0CD89D004F4C69 /* RankingListMainViewModel.m */; };
 		86BFCB031E0CD914004F4C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BFCB021E0CD914004F4C69 /* Assets.xcassets */; };
 		86BFCB111E0CD935004F4C69 /* AboutMe.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 86BFCB051E0CD935004F4C69 /* AboutMe.PNG */; };
@@ -44,7 +52,6 @@
 		86BFCB631E0CDA9F004F4C69 /* GlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB571E0CDA9F004F4C69 /* GlobalViewController.m */; };
 		86BFCB641E0CDA9F004F4C69 /* MainTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB5A1E0CDA9F004F4C69 /* MainTabbar.m */; };
 		86BFCB651E0CDA9F004F4C69 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB5D1E0CDA9F004F4C69 /* MeViewController.m */; };
-		86BFCB661E0CDA9F004F4C69 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86BFCB5E1E0CDA9F004F4C69 /* MeViewController.xib */; };
 		86BFCB671E0CDA9F004F4C69 /* RankingListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB611E0CDA9F004F4C69 /* RankingListVC.m */; };
 		86BFCB6F1E0CDAE4004F4C69 /* BeautifulModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB6A1E0CDAE4004F4C69 /* BeautifulModel.m */; };
 		86BFCB701E0CDAE4004F4C69 /* RankingListMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCB6E1E0CDAE4004F4C69 /* RankingListMainModel.m */; };
@@ -64,6 +71,21 @@
 		86050DC81DFE159400FB05A3 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		86050DE91DFE1B2700FB05A3 /* MainTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTest.h; sourceTree = "<group>"; };
 		86050DEA1DFE1B2700FB05A3 /* MainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTest.m; sourceTree = "<group>"; };
+		862B08A11E11017A00890BCD /* RankingListAdvisersViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListAdvisersViewCell.h; sourceTree = "<group>"; };
+		862B08A21E11017A00890BCD /* RankingListAdvisersViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListAdvisersViewCell.m; sourceTree = "<group>"; };
+		862B08A71E1119C000890BCD /* RankingListAdvisersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListAdvisersCell.h; sourceTree = "<group>"; };
+		862B08A81E1119C000890BCD /* RankingListAdvisersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListAdvisersCell.m; sourceTree = "<group>"; };
+		862BD3581E1AE8AE0007E87E /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		862CCDCC1E126DA3001C972E /* RankingListSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListSearch.h; sourceTree = "<group>"; };
+		862CCDCD1E126DA3001C972E /* RankingListSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListSearch.m; sourceTree = "<group>"; };
+		862CCDD41E12A350001C972E /* RankingListHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListHeaderModel.h; sourceTree = "<group>"; };
+		862CCDD51E12A350001C972E /* RankingListHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListHeaderModel.m; sourceTree = "<group>"; };
+		8635A5CA1E13D8EE0016EEFA /* RankingListHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListHeaderViewController.h; sourceTree = "<group>"; };
+		8635A5CB1E13D8EE0016EEFA /* RankingListHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListHeaderViewController.m; sourceTree = "<group>"; };
+		8639ABEF1E152EC400F7EDC8 /* RankingListHeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListHeaderViewCell.h; sourceTree = "<group>"; };
+		8639ABF01E152EC400F7EDC8 /* RankingListHeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListHeaderViewCell.m; sourceTree = "<group>"; };
+		8639ABF21E1534CE00F7EDC8 /* RankingListHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListHeaderViewModel.h; sourceTree = "<group>"; };
+		8639ABF31E1534CE00F7EDC8 /* RankingListHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListHeaderViewModel.m; sourceTree = "<group>"; };
 		86BFCAFF1E0CD89D004F4C69 /* RankingListMainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListMainViewModel.h; sourceTree = "<group>"; };
 		86BFCB001E0CD89D004F4C69 /* RankingListMainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListMainViewModel.m; sourceTree = "<group>"; };
 		86BFCB021E0CD914004F4C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,9 +136,8 @@
 		86BFCB5A1E0CDA9F004F4C69 /* MainTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbar.m; sourceTree = "<group>"; };
 		86BFCB5C1E0CDA9F004F4C69 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		86BFCB5D1E0CDA9F004F4C69 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		86BFCB5E1E0CDA9F004F4C69 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
-		86BFCB601E0CDA9F004F4C69 /* RankingListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListVC.h; sourceTree = "<group>"; };
-		86BFCB611E0CDA9F004F4C69 /* RankingListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListVC.m; sourceTree = "<group>"; };
+		86BFCB601E0CDA9F004F4C69 /* RankingListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankingListVC.h; path = ../RankingListVC.h; sourceTree = "<group>"; };
+		86BFCB611E0CDA9F004F4C69 /* RankingListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankingListVC.m; path = ../RankingListVC.m; sourceTree = "<group>"; };
 		86BFCB691E0CDAE4004F4C69 /* BeautifulModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifulModel.h; sourceTree = "<group>"; };
 		86BFCB6A1E0CDAE4004F4C69 /* BeautifulModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifulModel.m; sourceTree = "<group>"; };
 		86BFCB6D1E0CDAE4004F4C69 /* RankingListMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListMainModel.h; sourceTree = "<group>"; };
@@ -207,6 +228,51 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		862CCDCF1E12A122001C972E /* RankingListHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				8639ABEF1E152EC400F7EDC8 /* RankingListHeaderViewCell.h */,
+				8639ABF01E152EC400F7EDC8 /* RankingListHeaderViewCell.m */,
+			);
+			path = RankingListHeaderView;
+			sourceTree = "<group>";
+		};
+		862CCDD01E12A14A001C972E /* RakingListMain */ = {
+			isa = PBXGroup;
+			children = (
+				86BFCB601E0CDA9F004F4C69 /* RankingListVC.h */,
+				86BFCB611E0CDA9F004F4C69 /* RankingListVC.m */,
+			);
+			path = RakingListMain;
+			sourceTree = "<group>";
+		};
+		862CCDD11E12A207001C972E /* RankingListHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8635A5CA1E13D8EE0016EEFA /* RankingListHeaderViewController.h */,
+				8635A5CB1E13D8EE0016EEFA /* RankingListHeaderViewController.m */,
+			);
+			path = RankingListHeader;
+			sourceTree = "<group>";
+		};
+		862CCDD21E12A22F001C972E /* RankingListHeaderViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8639ABF21E1534CE00F7EDC8 /* RankingListHeaderViewModel.h */,
+				8639ABF31E1534CE00F7EDC8 /* RankingListHeaderViewModel.m */,
+			);
+			path = RankingListHeaderViewModel;
+			sourceTree = "<group>";
+		};
+		862CCDD31E12A32D001C972E /* RankingListHeaderModel */ = {
+			isa = PBXGroup;
+			children = (
+				862CCDD41E12A350001C972E /* RankingListHeaderModel.h */,
+				862CCDD51E12A350001C972E /* RankingListHeaderModel.m */,
+			);
+			path = RankingListHeaderModel;
+			sourceTree = "<group>";
+		};
 		86BFCAFC1E0CD824004F4C69 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +284,7 @@
 		86BFCAFD1E0CD824004F4C69 /* RankingListViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				862CCDD21E12A22F001C972E /* RankingListHeaderViewModel */,
 				86BFCAFE1E0CD824004F4C69 /* RankingListMainViewModel */,
 			);
 			path = RankingListViewModel;
@@ -296,6 +363,7 @@
 		86BFCB391E0CDA54004F4C69 /* RankingListView */ = {
 			isa = PBXGroup;
 			children = (
+				862CCDCF1E12A122001C972E /* RankingListHeaderView */,
 				86BFCB3A1E0CDA54004F4C69 /* RankingListMainView */,
 			);
 			path = RankingListView;
@@ -318,6 +386,12 @@
 				86BFCB461E0CDA54004F4C69 /* RankingListTopCell.m */,
 				86BFCB471E0CDA54004F4C69 /* RankingListTopUVCell.h */,
 				86BFCB481E0CDA54004F4C69 /* RankingListTopUVCell.m */,
+				862B08A11E11017A00890BCD /* RankingListAdvisersViewCell.h */,
+				862B08A21E11017A00890BCD /* RankingListAdvisersViewCell.m */,
+				862B08A71E1119C000890BCD /* RankingListAdvisersCell.h */,
+				862B08A81E1119C000890BCD /* RankingListAdvisersCell.m */,
+				862CCDCC1E126DA3001C972E /* RankingListSearch.h */,
+				862CCDCD1E126DA3001C972E /* RankingListSearch.m */,
 			);
 			path = RankingListMainView;
 			sourceTree = "<group>";
@@ -366,7 +440,7 @@
 			children = (
 				86BFCB5C1E0CDA9F004F4C69 /* MeViewController.h */,
 				86BFCB5D1E0CDA9F004F4C69 /* MeViewController.m */,
-				86BFCB5E1E0CDA9F004F4C69 /* MeViewController.xib */,
+				862BD3581E1AE8AE0007E87E /* MeViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -374,8 +448,8 @@
 		86BFCB5F1E0CDA9F004F4C69 /* RankingList */ = {
 			isa = PBXGroup;
 			children = (
-				86BFCB601E0CDA9F004F4C69 /* RankingListVC.h */,
-				86BFCB611E0CDA9F004F4C69 /* RankingListVC.m */,
+				862CCDD11E12A207001C972E /* RankingListHeader */,
+				862CCDD01E12A14A001C972E /* RakingListMain */,
 			);
 			path = RankingList;
 			sourceTree = "<group>";
@@ -393,6 +467,7 @@
 		86BFCB6B1E0CDAE4004F4C69 /* RankingListModel */ = {
 			isa = PBXGroup;
 			children = (
+				862CCDD31E12A32D001C972E /* RankingListHeaderModel */,
 				86BFCB6C1E0CDAE4004F4C69 /* RankingListMainModel */,
 			);
 			path = RankingListModel;
@@ -491,7 +566,7 @@
 				86BFCB1C1E0CD935004F4C69 /* Register.PNG in Resources */,
 				86BFCB131E0CD935004F4C69 /* Global.PNG in Resources */,
 				86BFCB161E0CD935004F4C69 /* Main.PNG in Resources */,
-				86BFCB661E0CDA9F004F4C69 /* MeViewController.xib in Resources */,
+				862BD3591E1AE8AE0007E87E /* MeViewController.xib in Resources */,
 				86BFCB151E0CD935004F4C69 /* login.PNG in Resources */,
 				86BFCB031E0CD914004F4C69 /* Assets.xcassets in Resources */,
 				86BFCB1B1E0CD935004F4C69 /* Regist01.PNG in Resources */,
@@ -561,24 +636,31 @@
 			files = (
 				86050DEB1DFE1B2700FB05A3 /* MainTest.m in Sources */,
 				86BFCB351E0CDA2E004F4C69 /* UIView+HUD.m in Sources */,
+				862CCDCE1E126DA3001C972E /* RankingListSearch.m in Sources */,
+				862CCDD61E12A350001C972E /* RankingListHeaderModel.m in Sources */,
+				862B08A91E1119C000890BCD /* RankingListAdvisersCell.m in Sources */,
 				86BFCB671E0CDA9F004F4C69 /* RankingListVC.m in Sources */,
 				86BFCB291E0CD9C1004F4C69 /* NetManager.m in Sources */,
 				86BFCB4C1E0CDA54004F4C69 /* RankingListKindViewCell.m in Sources */,
 				86BFCB331E0CDA2E004F4C69 /* NSObject+Parse.m in Sources */,
 				86BFCB651E0CDA9F004F4C69 /* MeViewController.m in Sources */,
 				86BFCB621E0CDA9F004F4C69 /* BeautifyViewController.m in Sources */,
+				8639ABF11E152EC400F7EDC8 /* RankingListHeaderViewCell.m in Sources */,
 				86BFCB501E0CDA54004F4C69 /* RankingListTopUVCell.m in Sources */,
 				86050DC91DFE159400FB05A3 /* Test.m in Sources */,
 				86BFCB341E0CDA2E004F4C69 /* NSString+YX.m in Sources */,
 				86BFCB281E0CD9C1004F4C69 /* BaseNetManager.m in Sources */,
 				86BFCB4E1E0CDA54004F4C69 /* RankingListNationsViewCell.m in Sources */,
 				86BFCB4B1E0CDA54004F4C69 /* RankingListIcon.m in Sources */,
+				8639ABF41E1534CE00F7EDC8 /* RankingListHeaderViewModel.m in Sources */,
 				0CF7A49A1D329815008FBC98 /* AppDelegate.m in Sources */,
 				86BFCB631E0CDA9F004F4C69 /* GlobalViewController.m in Sources */,
 				86BFCB641E0CDA9F004F4C69 /* MainTabbar.m in Sources */,
 				86BFCB4F1E0CDA54004F4C69 /* RankingListTopCell.m in Sources */,
 				86BFCB011E0CD89D004F4C69 /* RankingListMainViewModel.m in Sources */,
+				8635A5CC1E13D8EE0016EEFA /* RankingListHeaderViewController.m in Sources */,
 				86BFCB4D1E0CDA54004F4C69 /* RankingListMainCell.m in Sources */,
+				862B08A31E11017A00890BCD /* RankingListAdvisersViewCell.m in Sources */,
 				86BFCB4A1E0CDA54004F4C69 /* RankingListFeatureCell.m in Sources */,
 				86BFCB6F1E0CDAE4004F4C69 /* BeautifulModel.m in Sources */,
 				86BFCB491E0CDA54004F4C69 /* MeiLaCell.m in Sources */,

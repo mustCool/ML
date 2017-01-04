@@ -32,7 +32,7 @@
         _imageIV  =  [UIImageView  new];
         [self.contentView  addSubview:_imageIV];
         [_imageIV  mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.equalTo(kWidth  *  (190.f  /  640.f));
+            make.width.equalTo(kWidth  *  (170.f  /  640.f));
             make.height.equalTo(kHight  *  (150.f  /  1132.f));
         }];
     }
@@ -62,7 +62,6 @@
         _topText  =  [UILabel  new];
         [self.contentView  addSubview:_topText];
         [_topText  mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.width.equalTo(self.topButton);
             make.width.equalTo(kWidth  *  (150.f  /  640.f));
             make.height.equalTo(kHight  *  (55.f  /  1132.f));
             make.top.equalTo(self.topLevel.mas_bottom).offset(kHight  *  (5.f  /  1132.f));

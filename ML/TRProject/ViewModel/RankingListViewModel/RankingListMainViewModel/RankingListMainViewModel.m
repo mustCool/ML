@@ -79,7 +79,7 @@
 
 -(NSInteger)rowNumber
 {
-    return self.dataList.data.nations.count  +  3;
+    return self.dataList.data.nations.count  +  4;
 }
 
 -(NSInteger)itemNumberForRow:(NSInteger)row
@@ -159,13 +159,13 @@
 {
     NSMutableAttributedString  *str  =  [NSMutableAttributedString  new];
     
-    NSAttributedString  *str1  =  [[NSAttributedString  alloc] initWithString:[NSString  stringWithFormat:@"%@",  self.dataList.data.total_des] attributes:@{NSForegroundColorAttributeName:  [UIColor  blackColor],  NSFontAttributeName:  [UIFont  boldSystemFontOfSize:16.f]}];
+    NSAttributedString  *str1  =  [[NSAttributedString  alloc] initWithString:[NSString  stringWithFormat:@"%@",  self.dataList.data.total_des] attributes:@{NSForegroundColorAttributeName:  [UIColor  blackColor],  NSFontAttributeName:  [UIFont  boldSystemFontOfSize:14.f]}];
     
-    NSAttributedString  *str2  =  [[NSAttributedString  alloc] initWithString:@"件收录，国内" attributes:@{NSForegroundColorAttributeName:[UIColor  grayColor],  NSFontAttributeName:  [UIFont  systemFontOfSize:16.f]}];
+    NSAttributedString  *str2  =  [[NSAttributedString  alloc] initWithString:@"件收录，国内" attributes:@{NSForegroundColorAttributeName:[UIColor  grayColor],  NSFontAttributeName:  [UIFont  systemFontOfSize:14.f]}];
     
-    NSAttributedString  *str3  =  [[NSAttributedString  alloc] initWithString:@"最大" attributes:@{NSForegroundColorAttributeName:[UIColor  blackColor],  NSFontAttributeName:  [UIFont  boldSystemFontOfSize:16.f]}];
+    NSAttributedString  *str3  =  [[NSAttributedString  alloc] initWithString:@"最大" attributes:@{NSForegroundColorAttributeName:[UIColor  blackColor],  NSFontAttributeName:  [UIFont  boldSystemFontOfSize:14.f]}];
     
-    NSAttributedString  *str4  =  [[NSAttributedString  alloc] initWithString:@"的妆品信息库" attributes:@{NSForegroundColorAttributeName:  [UIColor  grayColor],  NSFontAttributeName:  [UIFont  systemFontOfSize:16.f]}];
+    NSAttributedString  *str4  =  [[NSAttributedString  alloc] initWithString:@"的妆品信息库" attributes:@{NSForegroundColorAttributeName:  [UIColor  grayColor],  NSFontAttributeName:  [UIFont  systemFontOfSize:14.f]}];
     
     [str  appendAttributedString:str1];
     [str  appendAttributedString:str2];
@@ -173,5 +173,37 @@
     [str  appendAttributedString:str4];
     
     return str;
+}
+
+
+/* adviser  datalist */
+-(NSInteger)advisersNumberForRow:(NSInteger)row
+{
+    return self.dataList.data.advisers.list.count;
+}
+
+-(NSURL *)advisersAvatorIvURLAtIndex:(NSInteger)index  Row:(NSInteger)row
+{
+    return [NSString  stringWithFormat:kRanKingListPath, self.dataList.data.advisers.list[index].avatar].yx_URL;
+}
+
+-(NSString *)advisersNameAtIndex:(NSInteger)index  Row:(NSInteger)row
+{
+    return  self.dataList.data.advisers.list[index].nickname;
+}
+
+-(NSString *)advisersInfoAtIndex:(NSInteger)index  Row:(NSInteger)row
+{
+    return  self.dataList.data.advisers.list[index].rater_intro;
+}
+
+-(NSString  *)advisersTitle
+{
+    return self.dataList.data.advisers.title;
+}
+
+-(NSString *)advisersStrat
+{
+    return @"title_icon_heart";
 }
 @end

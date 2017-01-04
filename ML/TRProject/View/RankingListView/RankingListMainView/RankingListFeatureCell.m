@@ -37,7 +37,6 @@
             make.centerX.equalTo(self.contentView);
             make.bottom.equalTo(0.f);
         }];
-//        _littleTriangle.image  = [UIImage  imageNamed:@"top_triangle_icon"];
     }
     return _littleTriangle;
 }
@@ -78,7 +77,6 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-//    return 11;
     return [self.delegate  numberOfItemInRankingListFeatureCell:self];
 }
 

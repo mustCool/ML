@@ -22,7 +22,7 @@
             [self.contentView addSubview:btn];
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.width.equalTo(kWidth  *  (285.f  /  640.f));
-                make.height.equalTo(kHight  *  (260.f  /  1132.f));
+                make.height.equalTo(kHight  *  (280.f  /  1132.f));
                 make.top.equalTo(kHight  *  (30.f  /  1132.f));
                 
                 if (i  ==  0)
@@ -51,7 +51,7 @@
         _totalDes  =  [UILabel  new];
         [self.contentView  addSubview:_totalDes];
         [_totalDes  mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.topButton[1].mas_bottom).offset(kHight  *  (45.f  /  1132.f));
+            make.top.equalTo(self.topButton[1].mas_bottom).offset(kHight  *  (35.f  /  1132.f));
             make.left.equalTo(0.f);
             make.width.equalTo(kWidth);
             make.height.equalTo(kHight  *  (45.f  /  1132.f));
@@ -69,11 +69,11 @@
     {
         UICollectionViewFlowLayout  *layout  =  [UICollectionViewFlowLayout  new];
         layout.sectionInset  =  UIEdgeInsetsMake(0.f, 20.f, 20.f, 20.f);
-        layout.minimumLineSpacing  =  10.f;
+        layout.minimumLineSpacing  =  15.f;
         layout.minimumInteritemSpacing  =  10.f;
         
         //CGFloat  w  =  (long)([UIScreen  mainScreen].bounds.size.width  -  ((2  *  20.f)  +  (5  *  10.f)))  /  3;
-        CGFloat w = kWidth  *  (152.f  /  640.f);
+        CGFloat w = kWidth  *  (142.f  /  640.f);
         CGFloat h  =  w  +  10.f;
         layout.itemSize  =  CGSizeMake(w, h);
         layout.scrollDirection  =  UICollectionViewScrollDirectionHorizontal;

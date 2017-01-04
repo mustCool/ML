@@ -28,17 +28,18 @@
 
 #pragma mark  -m  RankingListModel
 #import "RankingListMainModel.h"
+#import "RankingListHeaderModel.h"
+#import "RankingListMainViewModel.h"
+#import "RankingListHeaderViewModel.h"
 
 #pragma mark  -m  NetWork
 #import "BaseNetManager.h"
 #import "NetManager.h"
 
-#pragma mark  -m  RankingListModel
-#import "RankingListMainModel.h"
-#import "RankingListMainViewModel.h"
-
 #pragma mark -m  ViewController
+#import "RankingListSearch.h"
 #import "BeautifyViewController.h"
+#import "RankingListHeaderViewController.h"
 #import "RankingListVC.h"
 #import "GlobalViewController.h"
 #import "MeViewController.h"
@@ -49,6 +50,9 @@
 #import "RankingListFeatureCell.h"
 #import "RankingListTopCell.h"
 #import "RankingListTopUVCell.h"
+#import "RankingListAdvisersViewCell.h"
+#import "RankingListAdvisersCell.h"
+#import "RankingListHeaderViewCell.h"
 
 
 #endif /* PrefixHeader_pch */

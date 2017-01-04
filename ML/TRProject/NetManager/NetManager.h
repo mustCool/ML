@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NetManager : BaseNetManager
 
 #pragma mark  -m  RankingListNetworkRequest
-+(id)getRankingListCompletionHandel:(void(^)(RankingListMainModel *model, NSError *error))completionHandel;
++(id)getRankingListCompletionHandel:(void(^)(RankingListMainModel  *model, NSError  *error))completionHandel;
+
+
+#pragma mark  -m  RankingListHeaderNetworkRequest
++(id)getRankingListHeaderBtnTag:(NSInteger)btnTag  CompletionHandel:(void(^)(RankingListHeaderModel  *model,  NSError  *error))completionHandel;
 
 @end

@@ -11,7 +11,7 @@
 
 @class RankingListVC;
 
-@interface RankingListVC () <RankingListMainCellDelegate,  RankingListFeatureCelllDelegate>
+@interface RankingListVC () <RankingListMainCellDelegate,  RankingListFeatureCelllDelegate,  RankingListAdvisersCellDelegate>
 @property (nonatomic) RankingListMainViewModel  *rankingListVM;
 @property (nonatomic) UIColor  *backColor;
 @end
@@ -57,6 +57,27 @@
     return [self.rankingListVM  featureProductsLevelAtIndex:index row:rankingListFeatureCell.indexPath.row];
 }
 
+#pragma mark  -m  RankingListAdvisersCelllDelegate
+-(NSInteger)numberOfItemInRankingListAdvisersCell:(RankingListAdvisersCell *)rankingListAdvisersCell
+{
+    return  [self.rankingListVM  advisersNumberForRow:rankingListAdvisersCell.indexPath.row];
+}
+
+-(NSURL *)rankingListAdvisersCellAvatorIV:(RankingListAdvisersCell *)rankingListAdvisersCell iconAtIndex:(NSInteger)index
+{
+    return  [self.rankingListVM  advisersAvatorIvURLAtIndex:index  Row:rankingListAdvisersCell.indexPath.row];
+}
+
+-(NSString *)rankingListAdvisersCellAdvisersName:(RankingListAdvisersCell *)rankingListAdvisersCell advisersNameIndex:(NSInteger)index
+{
+    return  [self.rankingListVM  advisersNameAtIndex:index  Row:rankingListAdvisersCell.indexPath.row];
+}
+
+-(NSString *)rankingListAdvisersCellAdvisersInfo:(RankingListAdvisersCell *)rankingListAdvisersCell advisersInfoIndex:(NSInteger)index
+{
+    return  [self.rankingListVM  advisersInfoAtIndex:index  Row:rankingListAdvisersCell.indexPath.row];
+}
+
 
 -(RankingListMainViewModel *)rankingListVM
 {
@@ -73,11 +94,15 @@
     self.tableView.separatorStyle = NO;
     self.tableView.backgroundColor  =  self.backColor;
 
-    //[self.view setBackgroundColor:self.backColor];
+    
+    // 自定义搜索栏
+    //[self  setNavigation];
+
     self.navigationItem.title  =  @"排行榜";
     [self.tableView  registerClass:[RankingListMainCell  class] forCellReuseIdentifier:@"cell"];
     [self.tableView  registerClass:[RankingListFeatureCell  class] forCellReuseIdentifier:@"featureCell"];
     [self.tableView  registerClass:[RankingListNationsViewCell  class] forCellReuseIdentifier:@"NationsCell"];
+    [self.tableView  registerClass:[RankingListAdvisersCell  class] forCellReuseIdentifier:@"AdvisersCell"];
     
     self.tableView.mj_header  =  [MJRefreshNormalHeader  headerWithRefreshingBlock:^{
         [self.rankingListVM getDataWithRequestMode:RequestModeRefresh completionHandler:^(NSError *error) {
@@ -96,14 +121,11 @@
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-//    return 3;
-    
     return self.rankingListVM.rowNumber;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"------行数是多少：%ld-----",self.rankingListVM.rowNumber);
     return 1;
 }
 
@@ -117,7 +139,10 @@
         [cell.topButton  enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSLog(@"%@",[self.rankingListVM topButton][idx]);
             [obj setBackgroundImageWithURL:[self.rankingListVM topButton][idx] forState:UIControlStateNormal options:NO];
+            obj.tag  =  idx;
+            [obj  addTarget:self action:@selector(rankingListHeaderVC:) forControlEvents:UIControlEventTouchUpInside];
         }];
+        
         
         cell.totalDes.attributedText  =  [self.rankingListVM  totalDesString];
         
@@ -160,9 +185,23 @@
         
         return cell;
     }
-    
-//    RankingListNationsViewCell  *cell  = [tableView  dequeueReusableCellWithIdentifier:@"NationsCell" forIndexPath:indexPath];
-//    [cell.detailIV  setBackgroundImageWithURL:[self.rankingListVM  detailIvURLForRow:indexPath.section] forState:UIControlStateNormal options:NO];
+    if (indexPath.section  ==  self.rankingListVM.rowNumber  -  1)
+    {
+        RankingListAdvisersCell  *cell  =  [tableView  dequeueReusableCellWithIdentifier:@"AdvisersCell" forIndexPath:indexPath];
+        
+        NSString  *str  = [self.rankingListVM  advisersStrat];
+        cell.adviserNameStarLeft.image  =  [UIImage  imageNamed:str];
+        cell.adviserNameStarRight.image  =  [UIImage  imageNamed:str];
+        cell.titleLB.text  =  [self.rankingListVM  advisersTitle];
+        
+        cell.delegate  =  self;
+        cell.indexPath  =  indexPath;
+        [cell.collectionView  reloadData];
+        
+        [cell.collectionView  setContentOffset:CGPointZero];
+        
+        return cell;
+    }
     
     RankingListFeatureCell  *cell  = [tableView  dequeueReusableCellWithIdentifier:@"featureCell" forIndexPath:indexPath];
     
@@ -189,9 +228,9 @@
     {
         return kHight  *  (775.f  /  1132.f);
     }
-    if (indexPath.section  ==  self.rankingListVM.rowNumber  -  3)
+    if (indexPath.section  ==  self.rankingListVM.rowNumber  -  1)
     {
-        return kHight  *  (642.f  /  1132.f);
+        return kHight  *  (500.f  /  1132.f);
     }
     
     return kHight  *  (740.f  /  1132.f);
@@ -215,5 +254,42 @@
     [self.tableView  deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    [super viewWillAppear:animated];
+//    [self  setNavigation];
+}
+
+#pragma mark  -m  setNavigationSearch
+-(void)setNavigation
+{
+    RankingListSearch  *search =  [RankingListSearch  new];
+    search.searchText.placeholder  =  @"搜产品/功效/品牌";
+    [search.searchScanBtn  setImage:[UIImage  imageNamed:@"icon_bar_search_qr"] forState:UIControlStateNormal];
+    search.searchGraph.image  =  [UIImage  imageNamed:@"icon_bar_search"];
+    
+    UIView  *view  =  [UIView  new];
+    view.frame  =  CGRectMake(0.f, 0.f, 100.f, 64.f);
+    view.backgroundColor  =  [UIColor  redColor];
+    
+    self.navigationItem.title = @"dsad";
+    
+}
+
+-(void)rankingListHeaderVC:sender
+{
+    UIButton  *topBtn  =  (UIButton  *)sender;
+    
+    RankingListHeaderViewController  *rankingListHeaderVC  =  [[RankingListHeaderViewController  alloc]init];
+    rankingListHeaderVC.headerBtnTag  =  topBtn.tag;
+    
+    
+    RankingListHeaderViewModel  *viewModel  =  [RankingListHeaderViewModel  new];
+    viewModel.btnTag  =  topBtn.tag;
+
+    
+    [self.navigationController   pushViewController:rankingListHeaderVC animated:YES];
+}
 
 @end

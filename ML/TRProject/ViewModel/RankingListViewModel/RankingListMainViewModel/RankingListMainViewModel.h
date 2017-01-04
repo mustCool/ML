@@ -25,16 +25,25 @@ typedef   NS_ENUM(NSUInteger,  RequestMode)
 -(NSInteger)itemNumberForRow:(NSInteger)row;
 -(NSURL  *)iconAtIndex:(NSInteger)index  row:(NSInteger)row;
 
+/* detail  ViewModel */
 -(NSURL  *)detailIvURLForRow:(NSInteger)row;
+-(NSInteger)detailNumberForRow:(NSInteger)row;
+-(NSURL  *)detailAtIndex:(NSInteger)index  row:(NSInteger)row;
+
+/* feature  ViewModel */
 -(NSURL  *)featureIvURLForRow:(NSInteger)row;
 -(NSURL  *)featureProductsURLAtIndex:(NSInteger)index sectionIndex:(NSInteger)sectionIndex row:(NSInteger)row;
 -(NSString  *)featureProductsInfoAtIndex:(NSInteger)index sectionIndex:(NSInteger)sectionIndex row:(NSInteger)row;
 -(NSString  *)featureProductsLevelAtIndex:(NSInteger)index  row:(NSInteger)row;
-
--(NSInteger)detailNumberForRow:(NSInteger)row;
 -(NSInteger)featureNumberForRow:(NSInteger)row  itemNumberForSection:(NSInteger)section;
 
--(NSURL  *)detailAtIndex:(NSInteger)index  row:(NSInteger)row;
+/* adviser  ViewModel */
+-(NSInteger)advisersNumberForRow:(NSInteger)row;
+-(NSURL  *)advisersAvatorIvURLAtIndex:(NSInteger)index  Row:(NSInteger)row;
+-(NSString  *)advisersNameAtIndex:(NSInteger)index  Row:(NSInteger)row;
+-(NSString  *)advisersInfoAtIndex:(NSInteger)index  Row:(NSInteger)row;
+-(NSString  *)advisersTitle;
+-(NSString  *)advisersStrat;
 
 -(NSMutableAttributedString  *)totalDesString;
 
