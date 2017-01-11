@@ -24,8 +24,10 @@
 }
 
 
+
 -(void)getDataWithcompletionHandler:(void (^)(NSError *))completionHandler
 {
+    NSLog(@"#############btnTag 的下标值是： %ld####################", _btnTag);
     [NetManager  getRankingListHeaderBtnTag:self.btnTag CompletionHandel:^(RankingListHeaderModel *model, NSError *error) {
             
         self.headerList  =  model;

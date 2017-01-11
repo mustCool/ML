@@ -9,11 +9,11 @@
 #ifndef Constant_h
 #define Constant_h
 
-#define kRankingListModelPath @"http://api.meilapp.com/product/top_entry?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&p=1&sig=245438c1913fae5238a87d577ab270ad42149579"
+#define kRankingListModelPath @"http://api.meilapp.com/product/top_entry?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050305&p=1&sig=b5d10dbe7600cdc99657b009adb980964f24de19"
 
-#define kRankingListHeaderFirstPath @"http://api.meilapp.com/product/custom_top?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&sig=2924ee4f8bb9c3d9bc1917622849c9d1b9037751&slug=73"
+#define kRankingListHeaderFirstPath @"http://api.meilapp.com/product/custom_top?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050305&sig=f4db7cc2e137ce9d075e51906b42e9f830d101e2&slug=369"
 
-#define kRankingListHeaderSecondPath  @"http://api.meilapp.com/product/custom_top?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&sig=674ecbe704752f04d76589dca9e096606cde7c36&slug=271"
+#define kRankingListHeaderSecondPath  @"http://api.meilapp.com/product/custom_top?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050305&sig=7eaec365c80b24375668327d45d99d57fc35bec0&slug=362"
 
 #define kRanking_listhmapath01 @"http://api.meilapp.com/product/top_entry?meila_client_id=dad5ceb10819fad35aa3119ddc26a312322e2ea6&meila_version=1050304&p=1&sig=be57b59fcd6c7b66673275d92c34c3d322eaddfc"
 

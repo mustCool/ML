@@ -285,8 +285,11 @@
     rankingListHeaderVC.headerBtnTag  =  topBtn.tag;
     
     
-    RankingListHeaderViewModel  *viewModel  =  [RankingListHeaderViewModel  new];
+    
+    RankingListHeaderViewModel  *viewModel =[RankingListHeaderViewModel  new];
     viewModel.btnTag  =  topBtn.tag;
+    
+    NSLog(@"********头部 Model 的下标值是：%ld  ******************", viewModel.btnTag);
 
     
     [self.navigationController   pushViewController:rankingListHeaderVC animated:YES];
